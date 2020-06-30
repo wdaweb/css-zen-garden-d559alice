@@ -12,5 +12,5 @@ https://d559alice.github.io/css-zen-garden-d559alice/
 ### 排版草圖
 ![image](CSS_ZEN_GARDEN_草圖.jpg)
 ### 網站呈現
-![image](CSS_ZEN_GARDEN_網站.png)
+![image](CSS_ZEN_GARDEN_網頁呈現.png)
 
