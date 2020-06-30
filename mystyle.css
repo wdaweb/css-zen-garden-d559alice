@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+}
+
+body{
+    background: #e9e1e0;
+}
+
+/* 1. zen-intro */
+#zen-intro{
+    padding: 1rem;
+}
+/* 1.1 banner */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("https://picsum.photos/1980/1080/?random=1") fixed no-repeat center/cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#banner h1{
+    font-size: 7.5rem;
+    font-family: 'MuseoModerno', cursive;
+}
+
+#banner h2{
+    font-size: 3rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* 1.2  zen-summary*/
+#zen-summary{
+    width: 14rem;
+    height: 14rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(49, 16, 16);
+    position: absolute;
+    bottom: -18%;
+    right: 20%;
+    z-index: 1;
+}
+
+#zen-summary::before{
+    content: "";
+    width: 17rem;
+    height: 17rem;
+    background: rgba(165, 66, 49, 0.5);
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -23%;
+    right: -10%;
+    pointer-events: none;
+}
+
+#zen-summary a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgb(22, 3, 3);
+    font-size: 1.5rem;
+}
+
+/* 1.3  zen-preamble*/
+#zen-preamble{
+    background: rgba(20, 131, 46, 0.2);
+    position: relative;
+    width: 50%;
+    left: 25%;
+    padding: 10rem 10rem;
+    margin: 2rem;
+    margin-bottom: 10rem;
+}
+
+#zen-preamble h3{
+    background: rgba(47, 175, 77, 0.3);
+    display: inline-block;
+    font-size: 2.5rem;
+    height: 6rem;
+    padding: 0 3rem;
+    text-align: center;
+    line-height: 6rem;
+    position: absolute;
+    top: 10%;
+    left: -25%;
+    text-shadow: 5px 5px 5px rgb(158, 158, 158);
+    transition: 1s;
+    color: rgb(49, 16, 16);
+}
+
+#zen-preamble h3:hover{
+    transform: scale(1.2);
+}
+
+#zen-preamble :not(h3){
+    font-size: 1rem;
+    color: rgb(49, 16, 16);
+    transition: 1s;
+}
+
+#zen-preamble :not(h3):hover{
+    font-size: 1.3rem;
+}
+
+/* 2. zen-supporting */
+#zen-supporting{
+position: relative;
+width: 100%;
+height: 130vh;
+margin-bottom: 10rem;
+color: rgb(49, 16, 16);
+}
+
+#zen-supporting a{
+    text-decoration: none;
+    color: rgb(49, 16, 16);
+}
+
+/* 2.1 zen-explanation */
+#zen-explanation{
+    background: rgba(30, 138, 53, 0.5);
+    top: 0;
+    left: 5%;
+}
+
+/* 2.2 zen-participation */
+#zen-participation{
+    background: rgba(211, 120, 112, 0.5);
+    top: 10%;
+    right: 15%;
+}
+
+
+/* 2.3 zen-benefits */
+#zen-benefits{
+    background: rgba(142, 112, 211,0.5);
+    bottom: 10%;
+    left: 10%;
+}
+
+/* 2.4 zen-requirements */
+#zen-requirements{
+    background: rgba(248, 239, 154, 0.5);
+    bottom: 0%;
+    right: 5%;
+}
+
+#zen-explanation,#zen-participation,#zen-benefits,#zen-requirements{
+    font-size: 3rem;
+    width: 45%;
+    height: 55vh;
+    margin: 1rem;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+#zen-explanation p,#zen-participation p,#zen-benefits p,#zen-requirements p{
+    font-size: 1rem;
+    display: none;
+}
+
+#zen-explanation:hover p,#zen-participation:hover p,#zen-benefits:hover p,#zen-requirements:hover p{
+    display: inline-block;
+}
+
+#zen-explanation:hover h3,#zen-participation:hover h3,#zen-benefits:hover h3,#zen-requirements:hover h3{
+    display: none;
+}
+
+
+/* 2.5 footer */
+#footer{
+    width: 100%;
+    text-align: right;
+    padding-right: 5rem;
+}
+
+#footer a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    width: 5rem;
+    height:5rem;
+    text-align: center;
+    line-height: 4rem;
+    color: rgb(49, 16, 16);
+}
+
+#footer a:nth-child(1){
+    background: rgb(240, 198, 198);
+}
+
+#footer a:nth-child(2){
+    background: rgb(241, 184, 184);
+}
+
+#footer a:nth-child(3){
+    background: rgb(243, 156, 156);
+}
+
+#footer a:nth-child(4){
+    background: rgb(240, 129, 129);
+}
+
+#footer a:nth-child(5){
+    background: rgb(236, 102, 102);
+}
+
+#footer a:hover{
+    background: rgba(224, 174, 140, 0.7);
+}
+/* 3. sidebar */
+
+/* 3.1 wrapper */
+
+/* 3.1.1 design-selection */
+#design-selection{
+    text-align: center;
+    height: 70vh;
+    position: relative;
+}
+
+.select{
+    background-color: rgb(250, 235, 215);
+    width: 80%;
+    height: 20rem;
+    font-size: 3rem;
+    text-shadow:3px 3px 5px #333;
+    color: rgb(49, 16, 16);
+    text-align: center;
+    line-height: 20rem;
+    border-radius: 1rem 1rem 0 0;
+    display: inline-block;
+    position: absolute;
+    top: 0rem;
+    left: 10%;
+    z-index: 1;
+}
+
+#design-selection a{
+    font-size: 1.1rem;
+    text-decoration: none; 
+    color: rgba(49, 16, 16,0.6);
+}
+
+#design-selection ul{
+    display: flex;
+    justify-content: center;
+}
+
+#design-selection li{
+    color: rgba(49, 16, 16,0.6);
+    width: 10%;
+    height: 12rem;
+    border-radius: 0 0 1rem 1rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    position: relative;
+    top: 11rem;
+}
+
+#design-selection li:hover{
+    transform: translateY(7rem);
+}
+
+#design-selection li::before{
+    content: "";
+    width: 100%;
+    height: 3rem;
+    border-radius: 0 0 1rem 1rem ;
+    text-align: center;
+    line-height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+#design-selection li:nth-child(1){
+    background: rgba(212, 176, 146, 0.5);
+}
+
+#design-selection li:nth-child(1)::before{
+    content: "1";
+    background: rgba(212, 176, 146, 0.5);
+}
+
+#design-selection li:nth-child(2){
+    background: rgba(211, 156, 112, 0.5);
+}
+
+#design-selection li:nth-child(2)::before{
+    content: "2";
+    background: rgba(211, 156, 112, 0.5);
+}
+
+#design-selection li:nth-child(3){
+    background: rgba(192, 136, 91, 0.5);
+}
+
+#design-selection li:nth-child(3)::before{
+    content: "3";
+    background: rgba(192, 136, 91, 0.5);
+}
+
+#design-selection li:nth-child(4){
+    background: rgba(182, 127, 82, 0.5);
+}
+
+#design-selection li:nth-child(4)::before{
+    content: "4";
+    background: rgba(182, 127, 82, 0.5);
+}
+
+#design-selection li:nth-child(5){
+    background: rgba(153, 99, 55, 0.5);
+}
+
+#design-selection li:nth-child(5)::before{
+    content: "5";
+    background: rgba(153, 99, 55, 0.5);
+}
+
+#design-selection li:nth-child(6){
+    background: rgba(126, 74, 33, 0.5);
+}
+
+#design-selection li:nth-child(6)::before{
+    content: "6";
+    background: rgba(126, 74, 33, 0.5);
+}
+
+#design-selection li:nth-child(7){
+    background: rgba(109, 58, 16, 0.5);
+}
+
+#design-selection li:nth-child(7)::before{
+    content: "7";
+    background: rgba(109, 58, 16, 0.5);
+}
+
+#design-selection li:nth-child(8){
+    background: rgba(78, 38, 5, 0.5);
+}
+
+#design-selection li:nth-child(8)::before{
+    content: "8";
+    background: rgba(78, 38, 5, 0.5);
+}
+
+/* 3.1.2 design-archives */
+#design-archives{
+    background: rgba(160, 96, 67,0.5);
+    display: flex;
+    transform: rotate(90deg);
+    height: 5rem;
+    width: 30rem;
+    line-height: 5rem;
+    padding-left: 2rem;
+    position: fixed;
+    top: -18%;
+    left: -5%;
+    transition: 1s;
+    transform: rotate(270deg);
+    z-index: 11;
+}
+
+#design-archives:hover{
+    top: 15%;
+}
+
+#design-archives ul{
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#design-archives a{
+    color: antiquewhite;
+}
+
+/* 3.1.3 zen-resources */
+#zen-resources {
+    position: relative;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+    background-color: rgb(82, 72, 66);
+    overflow: hidden;
+}
+
+#zen-resources:before,
+#zen-resources:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    min-width: 300vw;
+    min-height: 300vw;
+    background: #e9e1e0;
+    animation: rotate infinite linear;
+}
+
+#zen-resources:before {
+    bottom: 26vh;
+    border-radius: 45%;
+    animation-duration: 60s;
+}
+
+#zen-resources:after {
+    bottom: 23vh;
+    opacity: 0.5;
+    border-radius: 47%;
+    animation-duration: 60s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+    100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+}
+
+#zen-resources h3{
+    display: inline-block;
+    width: 10rem;
+    font-size: 2rem;
+    color: rgb(138, 136, 136);
+    text-shadow: 3px 3px 2px rgb(78, 58, 58);
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+    left: calc(50% - 5rem);
+}
+#zen-resources ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    color: rgb(138, 136, 136);
+    position: absolute;
+    bottom:10%;
+    left:30%;
+}
+
+#zen-resources a{
+    color: rgb(31, 14, 3);
+    text-decoration: none;
+}
