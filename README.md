@@ -7,3 +7,9 @@
 - 相關檔案須放在對應目錄，css,js。
 ###### 連結網址
 https://d559alice.github.io/css-zen-garden-d559alice/
+### ID樹狀圖
+![image](CSS_ZEN_GARDEN_樹狀圖.png)
+### 排版草圖
+![image](CSS_ZEN_GARDEN_草圖.jpg)
+### 網站呈現
+![image](CSS_ZEN_GARDEN_網頁呈現.png)
